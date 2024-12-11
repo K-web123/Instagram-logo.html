@@ -1,0 +1,73 @@
+
+  body {
+    background-color: #232323;
+    overflow: hidden;
+  }
+  #box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .instagram {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(
+      circle at 30% 110%,
+      #ffdb8b 0%,
+      #ee653d 25%,
+      #d42e81 50%,
+      #a237b6 75%,
+      #3e57bc 100%
+    );
+    border-radius: 35px;
+    box-shadow: 0px 15px 40px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .instagram::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    border: 8px solid #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+  }
+  .instagram::before {
+    content: "";
+    position: absolute;
+    top: 49px;
+    right: 49px;
+    border: 8px solid #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+  }
+  span {
+    position: absolute;
+    display: block;
+    top: 40px;
+    right: 40px;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  p {
+    position: absolute;
+    color: #fff;
+    font-family: "poppins";
+    margin-top: 250px;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    white-space: nowrap;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    cursor: pointer;
+  }
+  
